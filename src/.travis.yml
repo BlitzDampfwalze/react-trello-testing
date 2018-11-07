@@ -1,0 +1,14 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+    - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: a3+sgPT4SeEM2ftFJ2/fKBkct9BqXbaf+sUiA/zWCCOEhrh+KLZ+4vFto8edNbuO52FQUBTzZSMeRBLS7lCGknmX7lMht8Vrfp/Pl0RB1mZUX+U2ZjsSyWf57MP+lGmkHeq9zhSuYs5IcFb7Lor1jkXYYPOsBQbAtfpMDOwtI36cHk/Xfk9UbZ7lUyOiz06V3Jeva9yhWanZUEpDuwv5B/v5vdzzUjhfejRDaOyrqvcPYioJd0KcueWhT0HSdHB6YFWoZIKBLzHaJsVrfr1rlnZNa4SvmZjS8kBlS5gFsCuFvF/p2mKrdkqerMU5AWKsxm1Ti7LwVsJcBwdE16G6dwpAe3/K3xONKh+4wecOinCiJ9et7ywMuflKo0gQ7qOTx0EhAOPry6B4ADk3VAH3dM3xq3ok9ZyVTA8tFbZlrdVHiuqFSzjgz7LtD6Z2lQFo3R11Q/BB6MZG5hFjmXfXFBWUySd3XPorELE1QfYR+V+EbZ2jYcnCRNeRXIj8CdSXOyeC0ViWZ0Hj4MgUfMv02yndFtHLzYqDENYgF2EwilNex9Ep/NRjmzva8X5KUnKSebd5PAQdCKxR0BioT1WDeRIcu60RYVnO2Z5yWBRAsS5pt9NukZhJeeis/DgupnulFTDYsP81eEmOBjncEKm33sq9JDfnNFcl9lLMKKJLr8c=
+  app: agile-gorge-61222
+  on:
+    repo: https://github.com/BlitzDampfwalze/react-trello-testing
+env:
+  - CI=true

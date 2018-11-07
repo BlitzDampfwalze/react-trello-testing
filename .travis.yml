@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: u+J4bhfHakc7+o+55RlSBaRlGfqe4KFXmSdVR6gILzYw7cGZ0zTQ/DoUiAradpfBnKiI0Q8d2dZ7NXe8jUVYp4bfa78tgJjn78GufMYzoiLnhu4TCrJuBjVX859KjN2qhkpJJvTw8fsN4KhzrEyPDI7jMoffGUQxhus4c/GNnXcBAnnH/TX4pmQdSZpKV4uIsPaEM20/a3rwtoTV0QomXgFwV9rW4P3in70Zy7GHJwXkAuhyYQnnDkOq1hjoNIe5cZ58UK1CxW+n7k2GIIigwumrA03qZGfSyz7Lw5OuKEnMrTzdSCq+Qh9uhpvajiDfhx8rFGO9ohLJEGdQX59aqHgiB0HR64/UM8h1O/AMuACxgziNR7nEzwAVmKCHY4NCNnV0JZy6ybcJlQydNOZJyO5N5BUOops/OBDv18TaRoqeToDSEUjXAAffxwM0jBjCHGJyb3FZ1LvUwXgbvfhqp+f6zynJw0y6EBFlDxMbp0DAWowWcXloUrBoLC/1HyRYUV+t7xwaBS/Hj2/rT3pw8S5CeXLMHD38lpw9ECUaVesm+iycOdBHyokQnq0ZF2/4vkRevf7mOltN/UU1wos5ozgR7dDjpUtvLCPSZJ/bbm42cVH/kdWlJB6TB9+9fM+u45s6Jeot6KBY0WNO6/7UGZxdaawT08C20nX/C7VECpA=
+  app: 'yes'
+  on:
+    repo: BlitzDampfwalze/react-trello-testing
